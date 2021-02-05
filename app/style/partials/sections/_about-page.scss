@@ -1,0 +1,62 @@
+.about-article {
+
+}
+
+.employs-list {
+  padding-top: 20px;
+  padding-bottom: 135px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:not(:last-of-type) {
+      margin-bottom: 85px;
+
+      @media screen and (max-width: 700px) {
+        margin-bottom: 50px;
+      }
+    }
+
+    @media screen and (max-width: 700px) {
+      flex-direction: column;
+    }
+  }
+
+  &__content {
+    font-weight: 300;
+    padding-left: 85px;
+
+    @media screen and (max-width: 1024px) {
+      padding-left: 30px;
+    }
+
+    @media screen and (max-width: 700px) {
+      padding-top: 15px;
+      padding-left: 0;
+    }
+  }
+
+  &__name {
+    margin-bottom: 5px;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: left;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  &__text {
+    width: 100%;
+    max-width: 375px;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 14px;
+    }
+  }
+}

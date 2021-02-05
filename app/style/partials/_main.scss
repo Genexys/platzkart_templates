@@ -1,0 +1,24 @@
+
+@import "base/reset";
+@import "var";
+@import "mixins";
+@import "base/fonts";
+@import "base/base";
+
+@import "sections/main-screen/screen-logo";
+
+@import "sections/header";
+@import "sections/banner";
+@import "sections/process";
+@import "sections/getting";
+@import "sections/example";
+@import "sections/services";
+@import "sections/form";
+@import "sections/menu";
+@import "sections/keys-page";
+@import "sections/porfolio-page";
+@import "sections/modal";
+@import "sections/about-page";
+@import "sections/contacts-page";
+
+@import "media";

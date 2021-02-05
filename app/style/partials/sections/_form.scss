@@ -1,0 +1,239 @@
+.main-footer {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 50px;
+  background-color: #1a1a1b;
+  transition: transform 0.3s;
+
+  &.active {
+    transform: translateY(0);
+  }
+
+  .second-title {
+    margin-bottom: 10px;
+  }
+}
+.feedback-form-wrapper {
+  position: relative;
+  max-width: 709px;
+  margin: 0 auto;
+  padding: 30px 50px 0;
+
+  @media screen and (max-width: 767px) {
+    padding: 30px 20px;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    border-left: 1px dashed #e82832;
+    transform: translateX(-50%);
+    opacity: 0.5;
+  }
+}
+
+.feedback-form {
+  position: relative;
+  z-index: 2;
+
+  &__field {
+    position: relative;
+
+    &--focus {
+      .feedback-form__label {
+        top: -25px;
+        left: 1px;
+        display: block;
+        padding: 0 8px;
+        color: var(--yellowFont);
+      }
+    }
+
+    &.input-wrapper--error {
+      .feedback-form__input {
+        border-color: #e82833;
+        box-shadow: inset 0 0 4px 1px #e82833;
+      }
+    }
+  }
+
+  &__label {
+    position: absolute;
+    left: 12px;
+    top: 18px;
+    z-index: 4;
+    font-size: rem(16px);
+    text-transform: uppercase;
+    color: #000;
+    transition: all 0.3s;
+    cursor: text;
+  }
+
+  .error_field {
+    display: none;
+    position: absolute;
+    top: 8px;
+    right: calc(-100% - 15px);
+    text-align: left;
+    font-size: 12px;
+    width: 100%;
+    color: var(--yellowFont);
+  }
+
+  &__input {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 35px;
+    padding-left: 12px;
+    border: 1px solid #d4d4d4;
+    font-size: rem(24px);
+    transition: box-shadow 0.3s, border-color 0.3s;
+
+    &--textarea {
+      height: 100px;
+      margin-bottom: 20px;
+      padding-top: 12px;
+      font-size: rem(16px);
+      text-transform: uppercase;
+    }
+
+    &:focus + .feedback-form__label {
+      top: -25px;
+      left: 1px;
+      display: block;
+      padding: 0 8px;
+      color: var(--yellowFont);
+    }
+  }
+  &__btn {
+    display: block;
+    width: 100%;
+    max-width: 274px;
+    height: 53px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 5px;
+    background-color: #e82833;
+    font-weight: 300;
+    font-size: rem(16px);
+    line-height: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    transition: opacity 0.3s;
+    cursor: pointer;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+
+    &:hover {
+      opacity: 0.9;
+    }
+
+    &.disabled {
+      opacity: 0.3;
+      cursor: auto;
+    }
+  }
+}
+
+.personal-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.personal-data-href {
+  display: inline-block;
+  margin-left: 5px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.checkbox-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.5);
+  overflow: hidden;
+  z-index: 9000;
+  cursor: auto;
+  height: 100vh;
+}
+
+.checkbox-popup-cont {
+  color: #000000;
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
+
+.checkbox-popup-close {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: url(/local/images/svg/close.svg) no-repeat;
+}
+
+.checkbox-popup-close:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+
+.checkbox-popup-text
+{
+  height: calc(100% - 137px);
+  overflow-y: scroll;
+  width: 99%;
+  text-align: left;
+  padding: 10px 10px 10px 0;
+  margin-bottom: 12px;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.03em;
+  font-weight: normal;
+  color: #000000 !important;
+}
+
+.checkbox-popup-header {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: left;
+}
+
+.cppd_hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  height: 0 !important;
+  width: 0 !important;
+  overflow: hidden;
+}

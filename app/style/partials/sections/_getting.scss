@@ -1,0 +1,50 @@
+.getting-block {
+    .description {
+        margin-bottom: 80px;
+
+        @media screen and (max-width: 767px) {
+            margin-bottom: 40px;
+        }
+    }
+    &__list {
+        margin-bottom: 25px;
+    }
+}
+.getting-list {
+    display: flex;
+    flex-wrap: wrap;
+    counter-reset: my-awesome-counter;
+    list-style: none;
+
+    &__item {
+        position: relative;
+        flex-basis: 320px;
+        margin-bottom: 65px;
+        padding: 0 37px;
+        font-size: rem(24px);
+        text-transform: uppercase;
+        counter-increment: my-awesome-counter;
+
+        @media screen and (max-width: 767px) {
+            margin-bottom: 30px;
+        }
+
+        @media screen and (max-width: 560px) {
+            padding-right: 0;
+        }
+
+        &::before {
+            content: counter(my-awesome-counter);
+            --size: 37px;
+            position: absolute;
+            top: -5px;
+            left: -10px;
+            width: var(--size);
+            height: var(--size);
+            border-radius: 50%;
+            font-size: rem(24px);
+            line-height: var(--size);
+            text-align: center;
+          }
+    }
+}

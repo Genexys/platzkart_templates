@@ -1,0 +1,111 @@
+.process-block {
+  position: relative;
+  margin-bottom: 50px;
+
+  &__item {
+    &:last-of-type {
+      .item-title {
+        margin-right: -60px;
+        @media screen and (max-width: 560px) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+.process-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  counter-reset: counter;
+  list-style: none;
+
+  @media screen and (max-width: 767px) {
+    padding-left: 25px;
+  }
+
+  &--two-col {
+    justify-content: space-between;
+    max-width: 930px;
+    width: 100%;
+
+    .process-list__item {
+      flex-basis: 400px;
+      padding-right: 0;
+    }
+  }
+
+  &--one-col {
+    flex-direction: column;
+    justify-content: center;
+
+    .process-list__item {
+      flex-basis: auto;
+      max-width: 600px;
+      width: 100%;
+      margin-left: gw(210px);
+      margin-bottom: 50px;
+      padding-right: 0;
+
+      @media screen and (max-width: 767px) {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+    flex-basis: 320px;
+    margin-bottom: 70px;
+    padding: 0 40px;
+    counter-increment: counter;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 35px;
+      padding-right: 0;
+      padding-left: 20px;
+    }
+
+    @media screen and (max-width: 450px) {
+      padding-left: 10px;
+    }
+    &::before {
+      content: counter(counter);
+      --size: 37px;
+      position: absolute;
+      top: -10px;
+      left: -15px;
+      width: var(--size);
+      height: var(--size);
+      border: 5px solid rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+      font-size: rem(24px);
+      line-height: var(--size);
+      text-align: center;
+
+      @media screen and (max-width: 767px) {
+        --size: 27px;
+        left: -24px;
+        font-size: rem(20px);
+      }
+
+      @media screen and (max-width: 450px) {
+        top: -2px;
+        --size: 20px;
+        border-width: 3px;
+        font-size: rem(12px);
+      }
+    }
+  }
+  .item-title {
+    display: block;
+    margin: 0 -20px 15px 0;
+    font-size: rem(24px);
+    text-transform: uppercase;
+
+    @media screen and (max-width: 1024px) {
+      font-size: rem(18px);
+    }
+  }
+}

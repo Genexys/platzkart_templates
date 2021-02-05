@@ -1,0 +1,47 @@
+doctype html
+html(lang="ru").page
+    include ./template/head.pug
+    body.page__body
+        //include ./template/naming-page/index.pug
+        //include ./template/form-style/index.pug
+        //include ./template/market-explore/index.pug
+        //include ./template/strategy/index.pug
+        //include ./template/seo/index.pug
+        //include ./template/context-adv/index.pug
+        //include ./template/site-dev/index.pug
+        //include ./template/tech-sup/index.pug
+        //include ./template/keys-page.pug
+        //include ./template/porfolio-page.pug
+        //include ./template/services-page.pug
+        //include ./template/about.pug
+
+        //main.page-wrapper
+        //    .page-inner
+        //        .controls-wrapper
+        //            include ./template/block-page-menu.pug
+        //        .content-container
+        //            .container
+        //                include ./template/banner.pug
+        //                include ./template/process.pug
+        //                include ./template/getting.pug
+        //                include ./template/example.pug
+        //                include ./template/services.pug
+        //        .logo-wrapper
+        //            include ./template/right-logo.pug
+
+        //include ./template/form.pug
+
+        .video-back
+            video.video-back__video(id="videoback" playsinline autoplay loop muted preload="auto")
+                source(src="train1.webm?t=1599053471" type="video/webm")
+                source(src="train1.mp4?t=1599053471" type="video/mp4")
+
+
+        include ./template/main-screen/index.pug
+
+        //include ./template/menu.pug
+        //include ./template/modal.pug
+
+    script(src="js/vendor_main_page.js")
+    //script(src="js/vendor.min.js")
+    script(src="js/main.min.js")

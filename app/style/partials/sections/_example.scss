@@ -1,0 +1,143 @@
+.example-list-logo {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 70px -60px 100px;
+  // padding: 0 50px;
+  counter-reset: my-awesome-counter;
+  list-style: none;
+
+  @media screen and (max-width: 1024px) {
+    margin: 70px 0 100px;
+  }
+
+  &__item {
+    flex-basis: calc(100% / 3 - 4px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // &:nth-child(3n+2) {
+    //     padding: 0 100px;
+    // }
+    &:nth-of-type(1) {
+      border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+    }
+    &:nth-of-type(2) {
+      border-right: 1px dashed rgba(255, 255, 255, 0.2);
+      border-left: 1px dashed rgba(255, 255, 255, 0.2);
+      border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+    }
+    &:nth-of-type(3) {
+      border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+    }
+    &:nth-of-type(4) {
+      border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+    }
+    &:nth-of-type(5) {
+      border-right: 1px dashed rgba(255, 255, 255, 0.2);
+      border-left: 1px dashed rgba(255, 255, 255, 0.2);
+      border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+    }
+    &:nth-of-type(6) {
+      border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+    }
+    &:nth-of-type(8) {
+      border-right: 1px dashed rgba(255, 255, 255, 0.2);
+      border-left: 1px dashed rgba(255, 255, 255, 0.2);
+    }
+    img {
+      padding: gw(30px);
+      transition: transform 0.3s ease;
+      &:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
+      }
+    }
+  }
+}
+.example-slider-logo__wrapper {
+  padding: 0 100px;
+
+  @media screen and (max-width: 1024px) {
+    padding: 0 20px;
+  }
+
+  @media screen and (max-width: 500px) {
+    padding: 0;
+  }
+}
+.example-slider {
+  position: relative;
+
+  &-wrapper {
+    position: relative;
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      // top: 50%;
+      width: 23px;
+      height: 12px;
+      margin: 0;
+      // transform: translateY(-50%);
+
+      @media screen and (max-width: 500px) {
+        display: none;
+      }
+
+      &::after {
+        content: '';
+        width: 23px;
+        height: 12px;
+        background-image: url('../img/ico-arrow-white.svg');
+        background-repeat: no-repeat;
+      }
+    }
+
+    .swiper-button-prev {
+      left: -5.4vw;
+
+      @media screen and (max-width: 1024px) {
+        left: -30px;
+      }
+
+      &::after {
+        transform: rotate(180deg);
+      }
+    }
+
+    .swiper-button-next {
+      right: -3.2vw;
+
+      @media screen and (max-width: 1024px) {
+        right: -30px;
+      }
+    }
+  }
+}
+
+.example-common-list {
+  &__item {
+    padding-bottom: 5px;
+    font-weight: 300;
+    font-size: rem(24px);
+    color: #ffffff;
+
+    @media screen and (max-width: 767px) {
+      font-size: 16px;
+    }
+
+    &:hover {
+      a {
+        color: var(--yellowFont);
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: #ffffff;
+      transition: color 0.3s;
+
+    }
+  }
+}

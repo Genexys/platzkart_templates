@@ -1,0 +1,27 @@
+.address-block {
+  display: flex;
+  max-width: 700px;
+  justify-content: space-between;
+  font-style: normal;
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+
+  a {
+    color: var(--mainYellowColor);
+  }
+}
+.contact-col-1 {
+  span {
+    white-space: nowrap;
+  }
+}
+.contact-col-2 {
+  padding-left: 30px;
+  padding-top: 77px;
+
+  @media screen and (max-width: 600px) {
+    padding: 0;
+  }
+}

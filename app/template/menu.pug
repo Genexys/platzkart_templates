@@ -1,0 +1,240 @@
+#menu.menu
+    .main-nav-wrapper
+        .mobile-nav-close
+            .mobile-nav-close__title
+                include ./logo.html
+            button(type="button" aria-label="Назад").mobile-nav-close__btn
+                span
+        nav.main-nav(aria-label="Навигация по сайту")
+            span.main-nav__mobile-title(data-name-title-mobile)
+            ul.main-nav__list.main-list-menu(aria-label="Список меню")
+                li.main-list-menu__item
+
+                    .main-list-menu__wrapper-title
+                        span.dummy-title О компании
+                        a(href="about.html" data-name-menu="company").main-list-menu__title О&nbsp;компании
+
+                    ul.main-list-menu__sub-menu.sub-menu.sub-menu--company(data-sub-menu="company", aria-label="О компании")
+                        li.sub-menu__item
+                            a(href="about.html").animate-item-menu-1 история
+
+                            .line-svg.line-company-1
+                                <svg class="menu-svg-1" width="100%" height="100%" viewBox="0 0 169.529 85.665">
+                                    <path id="Path_248" data-name="Path 248" d="M1582.583,1504.714c98.127,0,96.768-81.582,169.508-84.666" transform="translate(-1582.583 -1419.549)" fill="none" stroke="#fff" stroke-width="1" opacity="0.996"/>
+                                </svg>
+
+                                //svg(class="menu-svg-1" width="100%" height="100%" viewBox="0 0 175 86")
+                                //    path(d="M1577.091,1504.469c98.127,0,101.333-86.689,175-84.421" transform="translate(-1577.091 -1419.507)" fill="none" stroke="#fff" stroke-width="1" opacity="0.996")
+
+                        li.sub-menu__item
+                            a(href="about.html").animate-item-menu-1 команда
+
+                            .line-svg.line-company-2
+                                <svg class="menu-svg-1" width="100%" height="100%" viewBox="0 0 170.527 53.15">
+                                    <path id="Path_254" data-name="Path 254" d="M1581.5,1471.293c96.9,0,97.082-48.817,170.5-52.151" transform="translate(-1581.496 -1418.643)" fill="none" stroke="#fff" stroke-width="1" opacity="0.996"/>
+                                </svg>
+
+                                //svg(class="menu-svg-1" width="100%" height="100%" viewBox="0 0 171 52")
+                                //    path(d="M1577.091,1471.117c96.9,0,98.282-53.25,171.031-51.046" transform="translate(-1577.091 -1419.508)" fill="none" stroke="#fff" stroke-width="1" opacity="0.996")
+
+                li.main-list-menu__item
+                    .main-list-menu__wrapper-title
+                        span.dummy-title Услуги
+                        a(href="services-page.html" data-name-menu="service").main-list-menu__title Услуги
+
+                    ul.main-list-menu__sub-menu.sub-menu.sub-menu--services(data-sub-menu="service" aria-label="Услуги")
+
+                        li.sub-menu__item
+                            a(href="services-page.html").animate-item-menu-1 маркетинг
+
+                            .line-svg.line-service-1
+                                <svg class="menu-svg-1" width="100%" height="100%" viewBox="0 0 417.003 45.883">
+                                    <path id="Path_255" data-name="Path 255" d="M1547,1463.983c214.971,0,253.451-44.02,417-44.883" transform="translate(-1547 -1418.6)" fill="none" stroke="#fff" stroke-width="1" opacity="0.998"/>
+                                </svg>
+
+                                //svg(class="menu-svg-1" width="100%" height="100%" viewBox="0 0 390 35")
+                                //    path(d="M1577.091,1450.117c214.971,0,219.383-33.049,380.768-29.9" transform="translate(-1577.091 -1419.512)" fill="none" stroke="#fff" stroke-width="1" opacity="0.998")
+
+                            ul.sub-menu__inner-list.sub-menu__inner-list--marketing(aria-label="Маркетинг")
+                                li
+                                    a(href="#").animate-item-menu исследования
+
+                                    .line-svg.line-svg_submenu.line-marketing-1
+                                        <svg class="menu-svg-2" width="100%" height="100%" viewBox="0 0 177.936 80.384">
+                                            <path id="Path_245" data-name="Path 245" d="M1577.091,1497.613c90.88-4.261,109.608-79.816,177.909-79.382" transform="translate(-1577.068 -1417.729)" fill="none" stroke="#fff" stroke-width="1" stroke-dasharray="2" opacity="0.998"/>
+                                        </svg>
+
+                                        //svg(class="menu-svg-2" width="100%" height="100%" viewBox="0 0 173.057 78.605")
+                                        //    path(d="M1577.091,1497.612c97.029,0,100.2-79.651,173.043-77.567" transform="translate(-1577.091 -1419.507)" fill="none" stroke="#fff" stroke-width="1" stroke-dasharray="2" opacity="0.998")
+
+                                li
+                                    a(href="strategy-page.html").animate-item-menu рекламные стратегии
+
+                                    .line-svg.line-svg_submenu.line-marketing-2
+                                        <svg class="menu-svg-2" width="100%" height="100%" viewBox="0 0 177.929 49.079">
+                                            <path id="Path_251" data-name="Path 251" d="M1577.091,1471.117c91.6-2.939,109.518-47.485,177.909-48.079" transform="translate(-1577.075 -1422.538)" fill="none" stroke="#fff" stroke-width="1" stroke-dasharray="2" opacity="0.998"/>
+                                        </svg>
+
+                                        //svg(class="menu-svg-2" width="100%" height="100%" viewBox="0 0 173.058 52.109")
+                                        //    path(d="M1577.091,1471.117c98.044,0,99.438-53.25,173.043-51.046" transform="translate(-1577.091 -1419.508)" fill="none" stroke="#fff" stroke-width="1" stroke-dasharray="2" opacity="0.998")
+
+                                li
+                                    a(href="context-adv-page.html").animate-item-menu продвижение сайта
+
+                                    .line-svg.line-svg_submenu.line-marketing-3
+                                        <svg class="menu-svg-2" width="100%" height="100%" viewBox="0 0 177.936 20.783">
+                                            <path id="Path_257" data-name="Path 257" d="M1577.091,1441.089c90.973-2.818,109.874-18.168,177.909-19.783" transform="translate(-1577.076 -1420.806)" fill="none" stroke="#fff" stroke-width="1" stroke-dasharray="2" opacity="0.998"/>
+                                        </svg>
+
+                                        //svg(class="menu-svg-2" width="100%" height="100%" viewBox="0 0 173.058 22.079")
+                                        //    path(d="M1577.091,1441.089c97.695,0,99.7-23.141,173.043-20.937" transform="translate(-1577.091 -1419.511)" fill="none" stroke="#fff" stroke-width="1" stroke-dasharray="2" opacity="0.998")
+
+                                li
+                                    a(href="#").animate-item-menu контекстаная реклама
+
+                                    .line-svg.line-svg_submenu.line-marketing-4
+                                        <svg class="menu-svg-2" width="100%" height="100%" viewBox="0 0 177.921 13.46">
+                                            <path id="Path_260" data-name="Path 260" d="M1577.091,1420c92.411-1.459,111.868,12.92,177.909,12.342" transform="translate(-1577.083 -1419.402)" fill="none" stroke="#fff" stroke-width="1" stroke-dasharray="2" opacity="0.998"/>
+                                        </svg>
+
+                                        //svg(class="menu-svg-2" width="100%" height="100%" viewBox="0 0 173.051 12.387")
+                                        //    path(d="M1577.091,1420c97.695,0,99.7,12.5,173.043,11.311" transform="translate(-1577.091 -1419.505)" fill="none" stroke="#fff" stroke-width="1" stroke-dasharray="2" opacity="0.998")
+
+
+                        li.sub-menu__item
+                            a(href="#").animate-item-menu-1 дизайн
+
+                            .line-svg.line-service-2
+                                <svg class="menu-svg-1" width="100%" height="100%" viewBox="0 0 417.003 21.451">
+                                    <path id="Path_249" data-name="Path 249" d="M1547,1419.736c214.971,0,255.615,21.3,417,20.426" transform="translate(-1547 -1419.236)" fill="none" stroke="#fff" stroke-width="1" opacity="0.998"/>
+                                </svg>
+
+                                //svg(class="menu-svg-1" width="100%" height="100%" viewBox="0 0 380.782 44.878")
+                                //    path(d="M1577.091,1420c214.971,0,218.028,32.3,379.413,30.96" transform="translate(-1577.091 -1419.504)" fill="none" stroke="#fff" stroke-width="1" opacity="0.998")
+
+                            ul.sub-menu__inner-list.sub-menu__inner-list--design(aria-label="Дизайн")
+                                li
+                                    a(href="naming-page.html").animate-item-menu нейминг
+
+                                    .line-svg.line-svg_submenu.line-design-1
+                                        <svg class="menu-svg-2" width="100%" height="100%" viewBox="0 0 241.929 13.67">
+                                            <path id="Path_256" data-name="Path 256" d="M1577.091,1420c126.6-4.542,146.106,11.441,241.909,11.872" transform="translate(-1577.073 -1418.707)" fill="none" stroke="#fff" stroke-width="1" stroke-dasharray="2" opacity="0.998"/>
+                                        </svg>
+
+                                        //svg(class="menu-svg-2" width="100%" height="100%" viewBox="0 0 238.582 23.176")
+                                            path(d="M1577.091,1420c134.69,0,137.454,24.346,238.57,22.027" transform="translate(-1577.091 -1419.504)" fill="none" stroke="#fff" stroke-width="1" stroke-dasharray="2" opacity="0.998")
+
+                                li
+                                    a(href="logo-page.html").animate-item-menu логотип
+
+                                    .line-svg.line-svg_submenu.line-design-2
+                                        <svg class="menu-svg-2" width="100%" height="100%" viewBox="0 0 241.917 43.102">
+                                            <path id="Path_250" data-name="Path 250" d="M1577.091,1420c142.817-.051,141.86,43.672,241.909,42.06" transform="translate(-1577.091 -1419.505)" fill="none" stroke="#fff" stroke-width="1" stroke-dasharray="2" opacity="0.998"/>
+                                        </svg>
+
+                                        //svg(class="menu-svg-2" width="100%" height="100%" viewBox="0 0 238.582 54.772")
+                                            path(d="M1577.091,1420c135.171,0,137.093,56.024,238.57,53.705" transform="translate(-1577.091 -1419.505)" fill="none" stroke="#fff" stroke-width="1" stroke-dasharray="2" opacity="0.998")
+
+                                li
+                                    a(href="form-page.html").animate-item-menu фирменный стиль
+
+                                    .line-svg.line-svg_submenu.line-design-3
+                                        <svg class="menu-svg-2" width="100%" height="100%" viewBox="0 0 241.931 73.164">
+                                            <path id="Path_244" data-name="Path 244" d="M1577.091,1420c126.291,2.7,146.385,74.287,241.909,72.118" transform="translate(-1577.08 -1419.505)" fill="none" stroke="#fff" stroke-width="1" stroke-dasharray="2" opacity="0.998"/>
+                                        </svg>
+
+                                        //svg(class="menu-svg-2" width="100%" height="100%" viewBox="0 0 238.581 81.776")
+                                            path(d="M1577.091,1420c133.772,0,138.144,82.9,238.57,80.736" transform="translate(-1577.091 -1419.505)" fill="none" stroke="#fff" stroke-width="1" stroke-dasharray="2" opacity="0.998")
+
+
+                        li.sub-menu__item
+                            a(href="#").animate-item-menu-1 разработка
+
+                            .line-svg.line-service-3
+                                <svg class="menu-svg-1" width="100%" height="100%" viewBox="0 0 417.01 83.965">
+                                    <path id="Path_243" data-name="Path 243" d="M1547,1419.837c214.971,0,257.346,79.805,417,82.965" transform="translate(-1547 -1419.337)" fill="none" stroke="#fff" stroke-width="1" opacity="0.998"/>
+                                </svg>
+
+                                //svg(class="menu-svg-1" width="100%" height="100%" viewBox="0 0 400 84")
+                                //    path(d="M1577.091,1420c214.971,0,222,84.23,383.382,82.027" transform="translate(-1577.091 -1419.505)" fill="none" stroke="#fff" stroke-width="1" opacity="0.998")
+
+                            ul.sub-menu__inner-list.sub-menu__inner-list--develop(aria-label="Разработка")
+                                li
+                                    a(href="site-dev-page.html").animate-item-menu сайты
+
+                                    .line-svg.line-svg_submenu.line-develop-1
+                                        <svg class="menu-svg-2" width="100%" height="100%" viewBox="0 0 170.911 68.819">
+                                            <path id="Path_258" data-name="Path 258" d="M1577.091,1420c70.2,0,112.848,67.558,170.909,67.819" transform="translate(-1577.091 -1419.504)" fill="none" stroke="#fff" stroke-width="1" stroke-dasharray="2" opacity="0.998"/>
+                                        </svg>
+
+                                        //svg(class="menu-svg-2" width="100%" height="100%" viewBox="0 0 124.408 65.091")
+                                            path(d="M1577.091,1420c70.2,0,71.643,70.359,124.345,63.659" transform="translate(-1577.091 -1419.504)" fill="none" stroke="#fff" stroke-width="1" stroke-dasharray="2" opacity="0.998")
+
+                                li
+                                    a(href="dev-sup-page.html").animate-item-menu интернет магазины
+
+                                    .line-svg.line-svg_submenu.line-develop-2
+                                        <svg class="menu-svg-2" width="100%" height="100%"  viewBox="0 0 170.952 98.228">
+                                            <path id="Path_252" data-name="Path 252" d="M1577.091,1420c82.409,4.163,90.258,100,170.909,97.17" transform="translate(-1577.066 -1419.505)" fill="none" stroke="#fff" stroke-width="1" stroke-dasharray="2" opacity="0.998"/>
+                                        </svg>
+
+                                        //svg(class="menu-svg-2" width="100%" height="100%" viewBox="0 0 123.03 98.103")
+                                            path(d="M1577.091,1420c69.685,0,70.675,101.169,122.99,96.982" transform="translate(-1577.091 -1419.505)" fill="none" stroke="#fff" stroke-width="1" stroke-dasharray="2" opacity="0.998")
+
+                                li
+                                    a(href="seo-page.html").animate-item-menu техническая поддержка
+
+                                    .line-svg.line-svg_submenu.line-develop-3
+                                        <svg class="menu-svg-2" width="100%" height="100%" viewBox="0 0 170.909 128.989">
+                                            <path id="Path_246" data-name="Path 246" d="M1577.091,1420c71.188,0,83.146,127.907,170.909,127.989" transform="translate(-1577.091 -1419.505)" fill="none" stroke="#fff" stroke-width="1" stroke-dasharray="2" opacity="0.998"/>
+                                        </svg>
+
+                                        //svg(class="menu-svg-2" width="100%" height="100%" viewBox="0 0 126.992 135.227")
+                                            path(d="M1577.091,1420c71.188,0,73.515,137.765,126.958,134.161" transform="translate(-1577.091 -1419.505)" fill="none" stroke="#fff" stroke-width="1" stroke-dasharray="2" opacity="0.998")
+
+                li.main-list-menu__item
+                    .main-list-menu__wrapper-title
+                        span.dummy-title Портфолио
+                        a(href="portfolio-page.html" data-name-menu="portfolio").main-list-menu__title Портфолио
+
+                    ul.main-list-menu__sub-menu.sub-menu.sub-menu--portfolio(data-sub-menu="portfolio" aria-label="Портфолио")
+                        li.sub-menu__item
+                            a(href="#marketing").animate-item-menu-1 маркетинг
+
+                            .line-svg.line-portfolio-1
+                                <svg class="menu-svg-1" width="100%" height="100%" viewBox="0 0 189.912 86.485">
+                                    <path id="Path_259" data-name="Path 259" d="M1577.091,1420c105.793,0,107.3,84.983,189.909,85.485" transform="translate(-1577.091 -1419.505)" fill="none" stroke="#fff" stroke-width="1" opacity="0.996"/>
+                                </svg>
+
+                                //svg(class="menu-svg-1" width="100%" height="100%" viewBox="0 0 187.443 87.09")
+                                    path(d="M1577.091,1420c105.793,0,107.965,94.511,187.387,85.511" transform="translate(-1577.091 -1419.505)" fill="none" stroke="#fff" stroke-width="1" opacity="0.996")
+
+                        li.sub-menu__item
+                            a(href="#form-style").animate-item-menu-1 фирмменый стиль
+
+                            .line-svg.line-portfolio-2
+                                <svg class="menu-svg-1" width="100%" height="100%" viewBox="0 0 189.916 127.73">
+                                    <path id="Path_253" data-name="Path 253" d="M1577.091,1420c105.4,0,111.175,125.661,189.909,126.73" transform="translate(-1577.091 -1419.504)" fill="none" stroke="#fff" stroke-width="1" opacity="0.996"/>
+                                </svg>
+
+                                //svg(class="menu-svg-1" width="100%" height="100%" viewBox="0 0 187.42 124.601")
+                                    path(d="M1577.091,1420c106.171,0,107.681,128.777,187.387,123.448" transform="translate(-1577.091 -1419.504)" fill="none" stroke="#fff" stroke-width="1" opacity="0.996")
+
+                        li.sub-menu__item
+                            a(href="#site").animate-item-menu-1 сайты
+
+                            .line-svg.line-portfolio-3
+                                svg(class="menu-svg-1" width="100%" height="100%" viewBox="0 0 187.414 162.105")
+                                    path(d="M1577.091,1420c105.072,0,108.506,165.351,187.387,161.025" transform="translate(-1577.091 -1419.505)" fill="none" stroke="#fff" stroke-width="1" opacity="0.996")
+
+                        li.sub-menu__item
+                            a(href="#other").animate-item-menu-1 другое
+
+                            .line-svg.line-portfolio-4
+                                svg(class="menu-svg-1" width="100%" height="100%" viewBox="0 0 187.42 197.604")
+                                    path(d="M1577.091,1420c105.072,0,108.506,201.786,187.387,196.507" transform="translate(-1577.091 -1419.504)" fill="none" stroke="#fff" stroke-width="1" opacity="0.996")
+
+                li.main-list-menu__item
+                    .main-list-menu__wrapper-title
+                        span.dummy-title Контакты
+                        a(href="#").main-list-menu__title Контакты

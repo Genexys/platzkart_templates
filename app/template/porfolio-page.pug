@@ -1,0 +1,47 @@
+main.page-wrapper
+    .page-inner
+        .controls-wrapper
+            include block-page-menu.pug
+        .content-container
+            article.portfolio-article
+                .container
+                    .title-block
+                        .title-block__inner
+                            h1.main-title.title-block__title Портфолио
+                    .portfolio-wrapper
+                        .portfolio-tabs
+                            button.portfolio-tabs__item(type="button" data-group="all") Всё
+                            button.portfolio-tabs__item(type="button" data-group="marketing") Маркетинг
+                            button.portfolio-tabs__item(type="button" data-group="form-style") Фирменный стиль
+                            button.portfolio-tabs__item(type="button" data-group="site") Сайты
+                            button.portfolio-tabs__item(type="button" data-group="other") Другое
+
+                        ul.portfolio-list#portfolio-list(aria-label="Портфолио")
+                            li.portfolio-list__item(data-groups='["marketing"]')
+                                span.portfolio-list__year 2018
+                                a(href="keys-page.html").portfolio-list__name STEEL DOORS
+                                a(href="keys-page.html").portfolio-list__category // Маркетинг
+
+                            li.portfolio-list__item(data-groups='["site"]')
+                                span.portfolio-list__year 2017
+                                a(href="keys-page.html").portfolio-list__name АСК
+                                a(href="keys-page.html").portfolio-list__category // Сайт
+
+                            li.portfolio-list__item(data-groups='["form-style"]')
+                                span.portfolio-list__year 2017
+                                a(href="keys-page.html").portfolio-list__name Ювелирный дом G
+                                a(href="keys-page.html").portfolio-list__category // Фирменный стиль
+
+                            li.portfolio-list__item(data-groups='["other"]')
+                                span.portfolio-list__year 2015
+                                a(href="keys-page.html").portfolio-list__name Porta Fortuna
+                                a(href="keys-page.html").portfolio-list__category // Логотип
+
+                            li.portfolio-list__item(data-groups='["other"]')
+                                span.portfolio-list__year 2010
+                                a(href="keys-page.html").portfolio-list__name Starco
+                                a(href="keys-page.html").portfolio-list__category // Плакаты
+
+        .logo-wrapper
+            include right-logo.pug
+        #rain.rain
